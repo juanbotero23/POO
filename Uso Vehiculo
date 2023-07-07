@@ -1,0 +1,115 @@
+package claselaboratorio2;
+
+public class Usovehiculo {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub	
+				
+	    vehiculo micoche1 = new vehiculo();
+	    
+	    vehiculo micoche2 = new vehiculo();
+	    
+	    vehiculo micoche3 = new vehiculo();
+	    
+	    vehiculo micoche4 = new vehiculo();
+	    
+	    vehiculo micoche5 = new vehiculo();
+	    
+	    vehiculo micoche6 = new vehiculo();
+				
+		micoche1.establece_color("Rojo");
+		
+		micoche2.establece_color("Negro");
+		
+		micoche3.establece_color("Azul");
+		
+		micoche4.establece_color("Amarillo");
+		
+		micoche5.establece_color("Verde");
+		
+		micoche6.establece_color("Morado");
+				
+		Furgonetica mifurgoneta1 = new Furgonetica(7, 580);
+		
+		Furgonetica mifurgoneta2 = new Furgonetica(8, 600);
+		
+		Furgonetica mifurgoneta3 = new Furgonetica(2, 1000);
+		
+		Furgonetica mifurgoneta4 = new Furgonetica(4, 1500);
+		
+		Furgonetica mifurgoneta5 = new Furgonetica(10, 200);
+		
+		Furgonetica mifurgoneta6 = new Furgonetica(6, 2000);
+				
+		mifurgoneta1.establece_color("Azul");
+				
+		mifurgoneta1.configura_asientos("Si");
+				
+		mifurgoneta1.configura_climatizador("Si");
+		
+		mifurgoneta2.establece_color("Morado");
+		
+		mifurgoneta2.configura_asientos("Si");
+				
+		mifurgoneta2.configura_climatizador("no");
+		
+		mifurgoneta3.establece_color("Plateado");
+		
+		mifurgoneta3.configura_asientos("no");
+				
+		mifurgoneta3.configura_climatizador("no");
+		
+		mifurgoneta4.establece_color("Verde");
+		
+		mifurgoneta4.configura_asientos("Si");
+				
+		mifurgoneta4.configura_climatizador("Si");
+		
+		mifurgoneta5.establece_color("Negro");
+		
+		mifurgoneta5.configura_asientos("Si");
+				
+		mifurgoneta5.configura_climatizador("No");
+		
+		mifurgoneta6.establece_color("Rosado");
+		
+		mifurgoneta6.configura_asientos("Si");
+				
+		mifurgoneta6.configura_climatizador("Si");
+				
+		System.out.println(micoche1.dime_datos_generales() 
+						+" "+ micoche1.dimeColor());
+		
+		System.out.println(micoche2.dime_datos_generales() 
+				+" "+ micoche2.dimeColor());
+		
+		System.out.println(micoche3.dime_datos_generales() 
+				+" "+ micoche3.dimeColor());
+		
+		System.out.println(micoche4.dime_datos_generales() 
+				+" "+ micoche4.dimeColor());
+		
+		System.out.println(micoche5.dime_datos_generales() 
+				+" "+ micoche5.dimeColor());
+		
+		System.out.println(micoche6.dime_datos_generales() 
+				+" "+ micoche6.dimeColor());
+		
+        System.out.println(mifurgoneta1.dime_datos_generales()+""+mifurgoneta1.dimeDatosFurgonetageneral()+" "+mifurgoneta1.dimeDatosFurgoneta());
+       
+        System.out.println(mifurgoneta2.dime_datos_generales()+""+mifurgoneta2.dimeDatosFurgonetageneral()+" "+mifurgoneta2.dimeDatosFurgoneta());
+        
+        System.out.println(mifurgoneta3.dime_datos_generales()+""+mifurgoneta3.dimeDatosFurgonetageneral()+" "+mifurgoneta3.dimeDatosFurgoneta());
+        
+        System.out.println(mifurgoneta4.dime_datos_generales()+""+mifurgoneta4.dimeDatosFurgonetageneral()+" "+mifurgoneta4.dimeDatosFurgoneta());
+        
+        System.out.println(mifurgoneta5.dime_datos_generales()+""+mifurgoneta5.dimeDatosFurgonetageneral()+" "+mifurgoneta5.dimeDatosFurgoneta());
+        
+        System.out.println(mifurgoneta6.dime_datos_generales()+""+mifurgoneta6.dimeDatosFurgonetageneral()+" "+mifurgoneta6.dimeDatosFurgoneta());
+        
+		
+		
+				
+	}
+
+}
