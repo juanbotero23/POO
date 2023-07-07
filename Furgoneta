@@ -1,0 +1,26 @@
+package claselaboratorio2;
+
+public class Furgonetica extends vehiculo{
+	
+	private int capacidad_carga; 
+	private int plazas_extras; 
+	
+	public Furgonetica(int plazas_extra, int capacidad_carga) {
+		
+		super();
+		this.capacidad_carga = capacidad_carga; 
+		this.plazas_extras = plazas_extra; 
+	}
+	
+	public String dimeDatosFurgoneta() {
+		return "la capacidad de carga es: "+ capacidad_carga +
+				"Kg y las plazas extras son "+ plazas_extras;
+		}
+	
+	public String dimeDatosFurgonetageneral() {
+		
+		return ", los datos generales son: Color: "+super.dimeColor()+", tipo de asientos: "+super.dime_asientos()+" y climatizador: "+super.dime_climatizador()+", "; 
+		
+	}
+
+}
