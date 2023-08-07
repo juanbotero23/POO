@@ -1,0 +1,44 @@
+package ProyectoFinalPOO;
+
+import javax.swing.*;
+import java.awt.event.*;
+
+public class Menu implements ActionListener{
+
+	JFrame frame;
+	JButton botonAgregar, botonBuscar;
+	Menu()
+	{
+		botonAgregar = new JButton("AGREGAR MAQUINARIA");
+		botonAgregar.setBounds(100, 125, 200, 50);
+		botonAgregar.addActionListener(this);
+		
+		botonBuscar = new JButton("BUSCAR MAQUINARIA");
+		botonBuscar.setBounds(100, 200, 200, 50);
+		botonBuscar.addActionListener(this);
+
+		frame = new JFrame("Listado de serial");
+		frame.setVisible(true);
+		frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+		frame.setSize(400,400);
+		frame.setResizable(true);
+		frame.setLayout(null);
+		frame.add(botonAgregar);
+		frame.add(botonBuscar);
+	}
+	
+	@Override
+	public void actionPerformed(ActionEvent e) 
+	{
+		if (e.getSource() == botonAgregar)
+		{
+			frame.dispose();
+			new Add();
+		}
+		if (e.getSource() == botonBuscar)
+		{
+			frame.dispose();
+			new Buscar();
+		}
+	}
+}
